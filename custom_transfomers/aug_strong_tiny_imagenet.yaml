@@ -1,0 +1,19 @@
+# Transformations
+normalization: True
+augmentation_strategy: scan
+augmentation_kwargs:
+   crop_size: 64
+   normalize:
+      mean: [0.48024866, 0.44807237, 0.39754647]
+      std: [0.23022248, 0.22650278, 0.22616987]
+   num_strong_augs: 8
+   cutout_kwargs:
+     n_holes: 1
+     length: 16
+     random: True
+
+transformation_kwargs:
+   crop_size: 64
+   normalize:
+      mean: [0.48024866, 0.44807237, 0.39754647]
+      std: [0.23022248, 0.22650278, 0.22616987]
